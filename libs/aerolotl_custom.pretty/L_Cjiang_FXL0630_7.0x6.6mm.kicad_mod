@@ -1,0 +1,125 @@
+(footprint "L_Cjiang_FXL0630_7.0x6.6mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Cjiang FXL0630 series molded power inductor 7.0x6.6x3.0mm, land pattern per Cjiang FXL datasheet (a=3.7, b=8.4, c=3.5).")
+	(tags "inductor molded FXL0630 7x6.6")
+	(property "Reference" "REF**"
+		(at 0 -4.6 0)
+		(layer "F.SilkS")
+		(uuid "54694cc6-e2bb-4fc2-8d9a-71c6d59aef97")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Cjiang_FXL0630_7.0x6.6mm"
+		(at 0 4.6 0)
+		(layer "F.Fab")
+		(uuid "13b49489-b0e2-4d31-94fc-fe15b1d63783")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe86da69-f082-49de-ac45-4aba086f23dc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Cjiang FXL0630 series molded power inductor 7.0x6.6x3.0mm, land pattern per Cjiang FXL datasheet (a=3.7, b=8.4, c=3.5)."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c1446d0-067c-4b3a-92f4-3e614cfd2bed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3.5 -3.3)
+		(end 3.5 3.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f2503c61-e6f5-44e2-b17a-6cae6102bf93")
+	)
+	(fp_line
+		(start -1.7 -3.41)
+		(end 1.7 -3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3706a44d-011c-4f2e-8fb0-70583b7465b7")
+	)
+	(fp_line
+		(start -1.7 3.41)
+		(end 1.7 3.41)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f616490c-810e-40bf-91e0-b2455639d88d")
+	)
+	(fp_rect
+		(start -4.45 -3.55)
+		(end 4.45 3.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "00ac298a-2b75-4f36-97a2-414cc5dd76be")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0)
+		(layer "F.Fab")
+		(uuid "a21a29be-4fcd-4e74-9cbe-2373dbe1200f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -3.025 0)
+		(size 2.35 3.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "b03443c1-8e99-4b88-a49f-e8eae3d6f0ab")
+	)
+	(pad "2" smd roundrect
+		(at 3.025 0)
+		(size 2.35 3.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.1)
+		(uuid "cd8b707d-22ef-4759-9ab5-663f093bf1d4")
+	)
+	(embedded_fonts no)
+)

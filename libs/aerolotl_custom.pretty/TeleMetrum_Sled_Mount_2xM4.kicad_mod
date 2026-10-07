@@ -1,0 +1,261 @@
+(footprint "TeleMetrum_Sled_Mount_2xM4"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Mounting for the 3D-printed TeleMetrum sled (Onshape AV Bay): 2x M4 clearance holes 4.5mm at 17.4mm spacing, M4 washer keepout on top, sled body keepout on bottom.")
+	(tags "telemetrum sled mounting hole M4")
+	(property "Reference" "REF**"
+		(at 0 -6.2 0)
+		(layer "F.SilkS")
+		(uuid "35b10a8d-f397-4341-8056-d01418d05a19")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TeleMetrum_Sled_Mount_2xM4"
+		(at 0 8.2 0)
+		(layer "F.Fab")
+		(uuid "0b4f47b5-59c3-4d14-82ae-9cdb8596d407")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "49703d35-399e-4db5-8344-51adca501738")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Mounting for the 3D-printed TeleMetrum sled (Onshape AV Bay): 2x M4 clearance holes 4.5mm at 17.4mm spacing, M4 washer keepout on top, sled body keepout on bottom."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ff68cd1d-bdf5-4939-9d03-48a5ee67caa9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center -8.7 0)
+		(end -3.95 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "dcebda41-e8ec-456b-9e14-e4dad7c4183f")
+	)
+	(fp_circle
+		(center -8.7 0)
+		(end -4.1 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e9d3f7ae-7ba4-427b-bcff-455fa2127850")
+	)
+	(fp_circle
+		(center 8.7 0)
+		(end 13.45 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8b188e32-6279-4dcf-b68d-888623f41cb9")
+	)
+	(fp_circle
+		(center 8.7 0)
+		(end 13.3 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "65ca3cb0-c7a5-4e13-9d1f-9885a1eb3e65")
+	)
+	(fp_rect
+		(start -12.7 -4)
+		(end 12.7 7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "29b42e5f-94e2-4da1-9fac-a9d32d431921")
+	)
+	(fp_rect
+		(start -12.6 -3.9)
+		(end 12.6 6.9)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "c6ae45f1-27d4-4f3f-b264-356f9e9c4fba")
+	)
+	(fp_rect
+		(start -12.7 -4)
+		(end 12.7 7)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.Fab")
+		(uuid "1ae02c32-9eb0-40e4-84e0-dcc27e2ae20d")
+	)
+	(fp_text user "TeleMetrum sled (bottom side)"
+		(at 0 4.5)
+		(layer "B.Fab")
+		(uuid "5b7c8022-166a-4044-979d-623ce5063db3")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -6)
+		(layer "F.Fab")
+		(uuid "f7159bb0-499b-4c87-8f6d-b6a19a2d9ac2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -8.7 0)
+		(size 4.5 4.5)
+		(drill 4.5)
+		(layers "*.Cu" "*.Mask")
+		(uuid "2edf915a-e4be-4ad8-ad6f-26e9bad82145")
+	)
+	(pad "" np_thru_hole circle
+		(at 8.7 0)
+		(size 4.5 4.5)
+		(drill 4.5)
+		(layers "*.Cu" "*.Mask")
+		(uuid "84ca47b6-7681-40ca-8f12-0999d4e0e34f")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "4251439b-bf21-4676-8275-9278f51f2b98")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -3.95 0) (xy -4.0413 0.9267) (xy -4.3116 1.8177) (xy -4.7505 2.639) (xy -5.3412 3.3588) (xy -6.061 3.9495) (xy -6.8823 4.3884) (xy -7.7733 4.6587) (xy -8.7 4.75) (xy -9.6267 4.6587) (xy -10.5177 4.3884) (xy -11.339 3.9495) (xy -12.0588 3.3588) (xy -12.6495 2.639) (xy -13.0884 1.8177) (xy -13.3587 0.9267) (xy -13.45 0) (xy -13.3587 -0.9267) (xy -13.0884 -1.8177) (xy -12.6495 -2.639) (xy -12.0588 -3.3588) (xy -11.339 -3.9495) (xy -10.5177 -4.3884) (xy -9.6267 -4.6587) (xy -8.7 -4.75) (xy -7.7733 -4.6587) (xy -6.8823 -4.3884) (xy -6.061 -3.9495) (xy -5.3412 -3.3588) (xy -4.7505 -2.639) (xy -4.3116 -1.8177) (xy -4.0413 -0.9267)
+			)
+		)
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "6b5bd6c2-ddb7-4add-8be8-3eec3f8f77ac")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 13.45 0) (xy 13.3587 0.9267) (xy 13.0884 1.8177) (xy 12.6495 2.639) (xy 12.0588 3.3588) (xy 11.339 3.9495) (xy 10.5177 4.3884) (xy 9.6267 4.6587) (xy 8.7 4.75) (xy 7.7733 4.6587) (xy 6.8823 4.3884) (xy 6.061 3.9495) (xy 5.3412 3.3588) (xy 4.7505 2.639) (xy 4.3116 1.8177) (xy 4.0413 0.9267) (xy 3.95 0) (xy 4.0413 -0.9267) (xy 4.3116 -1.8177) (xy 4.7505 -2.639) (xy 5.3412 -3.3588) (xy 6.061 -3.9495) (xy 6.8823 -4.3884) (xy 7.7733 -4.6587) (xy 8.7 -4.75) (xy 9.6267 -4.6587) (xy 10.5177 -4.3884) (xy 11.339 -3.9495) (xy 12.0588 -3.3588) (xy 12.6495 -2.639) (xy 13.0884 -1.8177) (xy 13.3587 -0.9267)
+			)
+		)
+	)
+	(zone
+		(layer "B.Cu")
+		(uuid "0540e7e8-6093-47af-8735-379b38d6dace")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads not_allowed)
+			(copperpour allowed)
+			(footprints not_allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -12.7 -4) (xy 12.7 -4) (xy 12.7 7) (xy -12.7 7)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

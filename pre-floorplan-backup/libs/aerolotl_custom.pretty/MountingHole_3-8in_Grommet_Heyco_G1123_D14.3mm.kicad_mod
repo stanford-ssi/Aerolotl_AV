@@ -1,0 +1,202 @@
+(footprint "MountingHole_3-8in_Grommet_Heyco_G1123_D14.3mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Hole for Heyco G1123 / RG562-14-2 rubber grommet on 3/8\"-16 threaded rod (AV bay stack). 14.3mm NPTH (grommet groove / PCB cutout). Grommet flange OD 19.1mm sits on both faces; keepout and courtyard at 20.1mm dia (flange + 0.5mm). Grommet bore 11.1mm, 6.4mm tall for 1.6mm PCB.")
+	(tags "mounting hole 3/8 threaded rod grommet Heyco G1123 RG562-14-2")
+	(property "Reference" "REF**"
+		(at 0 -11.6 0)
+		(layer "F.SilkS")
+		(uuid "c88e3411-b681-42f1-8323-9e1e746d5963")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MountingHole_3-8in_Grommet_Heyco_G1123_D14.3mm"
+		(at 0 11.6 0)
+		(layer "F.Fab")
+		(uuid "3c41c107-1001-446c-bd14-0a8fdb8c0ec6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b0f84f2-7fc1-408e-b759-22cc25617142")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Hole for Heyco G1123 / RG562-14-2 rubber grommet on 3/8\"-16 threaded rod (AV bay stack). 14.3mm NPTH (grommet groove / PCB cutout). Grommet flange OD 19.1mm sits on both faces; keepout and courtyard at 20.1mm dia (flange + 0.5mm). Grommet bore 11.1mm, 6.4mm tall for 1.6mm PCB."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7486de63-dc6b-4945-8c4b-a1a798c01e71")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 10.05 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "2371d642-0199-4068-8dda-3e093b1c9341")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9.75 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "22bce1a5-aa3f-4fa5-a739-5001e72d03a5")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 10.05 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "dda2d442-73c8-474f-92c3-d98bd7bade72")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9.75 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "f7367798-2846-4149-a605-16c551a71ee4")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9.55 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "3e105be5-1d0b-4df2-ab31-06536b36ff5e")
+	)
+	(fp_text user "G1123 grommet, flange OD 19.1"
+		(at 0 -10.8)
+		(layer "Dwgs.User")
+		(uuid "43122f9a-e8f7-4a63-b6d9-66b968d52a38")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 10.8)
+		(layer "F.Fab")
+		(uuid "ad5a16ad-b1d5-4d37-b4fa-ad15dbee1cc7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 14.3 14.3)
+		(drill 14.3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "56f177e2-5e31-42fd-9217-d4aa4deab764")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "c254471c-0c2d-421f-ba86-3e9518b93585")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 10.0500 0.0000) (xy 9.9640 1.3118) (xy 9.7076 2.6011) (xy 9.2850 3.8460) (xy 8.7036 5.0250) (xy 7.9732 6.1181) (xy 7.1064 7.1064) (xy 6.1181 7.9732) (xy 5.0250 8.7036) (xy 3.8460 9.2850) (xy 2.6011 9.7076) (xy 1.3118 9.9640) (xy 0.0000 10.0500) (xy -1.3118 9.9640) (xy -2.6011 9.7076) (xy -3.8460 9.2850) (xy -5.0250 8.7036) (xy -6.1181 7.9732) (xy -7.1064 7.1064) (xy -7.9732 6.1181) (xy -8.7036 5.0250) (xy -9.2850 3.8460) (xy -9.7076 2.6011) (xy -9.9640 1.3118) (xy -10.0500 0.0000) (xy -9.9640 -1.3118) (xy -9.7076 -2.6011) (xy -9.2850 -3.8460) (xy -8.7036 -5.0250) (xy -7.9732 -6.1181) (xy -7.1064 -7.1064) (xy -6.1181 -7.9732) (xy -5.0250 -8.7036) (xy -3.8460 -9.2850) (xy -2.6011 -9.7076) (xy -1.3118 -9.9640) (xy 0.0000 -10.0500) (xy 1.3118 -9.9640) (xy 2.6011 -9.7076) (xy 3.8460 -9.2850) (xy 5.0250 -8.7036) (xy 6.1181 -7.9732) (xy 7.1064 -7.1064) (xy 7.9732 -6.1181) (xy 8.7036 -5.0250) (xy 9.2850 -3.8460) (xy 9.7076 -2.6011) (xy 9.9640 -1.3118)
+			)
+		)
+	)
+	(zone
+		(layer "B.Cu")
+		(uuid "0f88faba-34dc-4b13-a9b8-6588f812a8fe")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 10.0500 0.0000) (xy 9.9640 1.3118) (xy 9.7076 2.6011) (xy 9.2850 3.8460) (xy 8.7036 5.0250) (xy 7.9732 6.1181) (xy 7.1064 7.1064) (xy 6.1181 7.9732) (xy 5.0250 8.7036) (xy 3.8460 9.2850) (xy 2.6011 9.7076) (xy 1.3118 9.9640) (xy 0.0000 10.0500) (xy -1.3118 9.9640) (xy -2.6011 9.7076) (xy -3.8460 9.2850) (xy -5.0250 8.7036) (xy -6.1181 7.9732) (xy -7.1064 7.1064) (xy -7.9732 6.1181) (xy -8.7036 5.0250) (xy -9.2850 3.8460) (xy -9.7076 2.6011) (xy -9.9640 1.3118) (xy -10.0500 0.0000) (xy -9.9640 -1.3118) (xy -9.7076 -2.6011) (xy -9.2850 -3.8460) (xy -8.7036 -5.0250) (xy -7.9732 -6.1181) (xy -7.1064 -7.1064) (xy -6.1181 -7.9732) (xy -5.0250 -8.7036) (xy -3.8460 -9.2850) (xy -2.6011 -9.7076) (xy -1.3118 -9.9640) (xy 0.0000 -10.0500) (xy 1.3118 -9.9640) (xy 2.6011 -9.7076) (xy 3.8460 -9.2850) (xy 5.0250 -8.7036) (xy 6.1181 -7.9732) (xy 7.1064 -7.1064) (xy 7.9732 -6.1181) (xy 8.7036 -5.0250) (xy 9.2850 -3.8460) (xy 9.7076 -2.6011) (xy 9.9640 -1.3118)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,202 @@
+(footprint "MountingHole_ThreadedRod_3-8in_D10.32mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Through-hole for 3/8\"-16 threaded rod (AV bay stack), 10.32mm (13/32\") NPTH matching the Onshape AV bay model, 9.6mm courtyard/keepout for 3/8\" washer and nut on both sides.")
+	(tags "mounting hole 3/8 threaded rod")
+	(property "Reference" "REF**"
+		(at 0 -11.8 0)
+		(layer "F.SilkS")
+		(uuid "005cc290-9e87-462b-9a48-1551eb5a290f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MountingHole_ThreadedRod_3-8in_D10.32mm"
+		(at 0 11.8 0)
+		(layer "F.Fab")
+		(uuid "005d7128-54b9-4321-a5a0-7952567069ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c2a2baab-260f-4f13-b998-9a58c0091cb1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Through-hole for 3/8\"-16 threaded rod (AV bay stack), 10.32mm (13/32\") NPTH matching the Onshape AV bay model, 9.6mm courtyard/keepout for 3/8\" washer and nut on both sides."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "887b6d7b-e521-4c70-8ce7-223f22ba2d8b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 9.6 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6de66264-89e1-4cde-ae11-05c0f7c0fafe")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9.45 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "412c313a-6e5a-4cc9-a7fd-9853b08dc38d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9.6 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.CrtYd")
+		(uuid "1e377d57-8c6c-4863-a587-ee666e7f42d4")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9.45 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "B.SilkS")
+		(uuid "49c0b009-11ab-4b30-b3e8-551c25cd2dd0")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9.32 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "Dwgs.User")
+		(uuid "d9e6d848-b051-4b08-a496-c00068d02c4f")
+	)
+	(fp_text user "3/8-16 rod, washer OD 18.6"
+		(at 0 -10.6)
+		(layer "Dwgs.User")
+		(uuid "3299d273-044b-44ac-b5e3-a6710a70635d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 10.6)
+		(layer "F.Fab")
+		(uuid "362ab6df-0ece-4e60-9a25-35a7232eb47e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 14.3 14.3)
+		(drill 14.3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "38507079-1d8f-4053-a1de-2eca9c7a1f91")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "938e3dbc-1bc8-4c26-9eb1-8e329aa056dc")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 9.6 0) (xy 9.5179 1.2531) (xy 9.2729 2.4847) (xy 8.8692 3.6738) (xy 8.3138 4.8) (xy 7.6162 5.8441) (xy 6.7882 6.7882) (xy 5.8441 7.6162) (xy 4.8 8.3138) (xy 3.6738 8.8692) (xy 2.4847 9.2729) (xy 1.2531 9.5179) (xy 0 9.6) (xy -1.2531 9.5179) (xy -2.4847 9.2729) (xy -3.6738 8.8692) (xy -4.8 8.3138) (xy -5.8441 7.6162) (xy -6.7882 6.7882) (xy -7.6162 5.8441) (xy -8.3138 4.8) (xy -8.8692 3.6738) (xy -9.2729 2.4847) (xy -9.5179 1.2531) (xy -9.6 0) (xy -9.5179 -1.2531) (xy -9.2729 -2.4847) (xy -8.8692 -3.6738) (xy -8.3138 -4.8) (xy -7.6162 -5.8441) (xy -6.7882 -6.7882) (xy -5.8441 -7.6162) (xy -4.8 -8.3138) (xy -3.6738 -8.8692) (xy -2.4847 -9.2729) (xy -1.2531 -9.5179) (xy 0 -9.6) (xy 1.2531 -9.5179) (xy 2.4847 -9.2729) (xy 3.6738 -8.8692) (xy 4.8 -8.3138) (xy 5.8441 -7.6162) (xy 6.7882 -6.7882) (xy 7.6162 -5.8441) (xy 8.3138 -4.8) (xy 8.8692 -3.6738) (xy 9.2729 -2.4847) (xy 9.5179 -1.2531)
+			)
+		)
+	)
+	(zone
+		(layer "B.Cu")
+		(uuid "37f8477d-39bb-41a3-87aa-116325d201cc")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.254)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 9.6 0) (xy 9.5179 1.2531) (xy 9.2729 2.4847) (xy 8.8692 3.6738) (xy 8.3138 4.8) (xy 7.6162 5.8441) (xy 6.7882 6.7882) (xy 5.8441 7.6162) (xy 4.8 8.3138) (xy 3.6738 8.8692) (xy 2.4847 9.2729) (xy 1.2531 9.5179) (xy 0 9.6) (xy -1.2531 9.5179) (xy -2.4847 9.2729) (xy -3.6738 8.8692) (xy -4.8 8.3138) (xy -5.8441 7.6162) (xy -6.7882 6.7882) (xy -7.6162 5.8441) (xy -8.3138 4.8) (xy -8.8692 3.6738) (xy -9.2729 2.4847) (xy -9.5179 1.2531) (xy -9.6 0) (xy -9.5179 -1.2531) (xy -9.2729 -2.4847) (xy -8.8692 -3.6738) (xy -8.3138 -4.8) (xy -7.6162 -5.8441) (xy -6.7882 -6.7882) (xy -5.8441 -7.6162) (xy -4.8 -8.3138) (xy -3.6738 -8.8692) (xy -2.4847 -9.2729) (xy -1.2531 -9.5179) (xy 0 -9.6) (xy 1.2531 -9.5179) (xy 2.4847 -9.2729) (xy 3.6738 -8.8692) (xy 4.8 -8.3138) (xy 5.8441 -7.6162) (xy 6.7882 -6.7882) (xy 7.6162 -5.8441) (xy 8.3138 -4.8) (xy 8.8692 -3.6738) (xy 9.2729 -2.4847) (xy 9.5179 -1.2531)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
