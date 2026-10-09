@@ -1,0 +1,123 @@
+(footprint "SW_DIP_SPSTx01_Kingtek_DSWB01LHGET_W7.62mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(uuid "3401bf34-7f29-4e0d-b487-e71066d50911")
+	(descr "Kingtek/YE DSWB01LHGET 1-position slide DIP switch (LCSC C126888), THT, pins 7.62mm apart, 1.0mm holes per datasheet. Body 9.9x3.96mm, 5.4mm tall incl. actuator. Origin = body centre.")
+	(tags "DIP switch SPST 1 position slide DSWB01LHGET")
+	(property "Reference" "REF**"
+		(at 0.000007 -3.810002 0)
+		(layer "F.SilkS")
+		(uuid "f5afc9a9-4df3-49fc-8095-9ded43b2234c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SW_DIP_SPSTx01_Kingtek_DSWB01LHGET_W7.62mm"
+		(at -0.125 3.2 0)
+		(layer "F.SilkS")
+		(uuid "272674d5-7853-4ee0-b279-f65bdacdc0df")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/C126888.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "82959e6a-2005-46ae-90d2-fe99a538c6b9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "1-position slide DIP switch, latching. ON = BOOT0 high (system bootloader), OFF = boot from flash."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5db1f9cf-2ad4-4873-95b1-fab77770ed19")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy 5.069991 2.100002) (xy -5.069993 2.099998) (xy -5.069991 -2.100002) (xy 5.069993 -2.099998)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "1af7b911-ab65-45d5-860f-48a59e41d680")
+	)
+	(fp_poly
+		(pts
+			(xy 5.450002 2.500003) (xy -5.449996 2.500006) (xy -5.450002 -2.500003) (xy 5.449996 -2.500006)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3eefb3f2-585f-42de-8727-8d543b820aa9")
+	)
+	(fp_poly
+		(pts
+			(xy 4.949997 1.980003) (xy -4.95 1.980001) (xy -4.949997 -1.980003) (xy 4.95 -1.980001)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5ae01ea3-7f9f-4c8b-8f46-77bf01bdf7e4")
+	)
+	(pad "1" thru_hole rect
+		(at -3.810002 -0.000007 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0f6daee1-80d5-4a62-9f81-8541b80c7744")
+	)
+	(pad "2" thru_hole circle
+		(at 3.810002 0.000007 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "51c92432-ed55-4ace-9d95-7c11486b10ff")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/libs/aerolotl_custom.3dshapes/Kingtek_DSWB01LHGET.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

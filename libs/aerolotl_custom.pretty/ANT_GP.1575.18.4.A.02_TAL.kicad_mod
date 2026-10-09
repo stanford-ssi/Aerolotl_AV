@@ -3,12 +3,13 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
+	(uuid "2ab0d44f-cbbe-44f9-99d1-dffb83d8c1f4")
 	(tags "GP.1575.18.4.A.02 ")
 	(property "Reference" "REF**"
-		(at 0 0 0)
+		(at 0 8.98 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "8b45dc5c-07c4-4a2e-a0f7-c50bb7e86394")
+		(uuid "ca792272-6dc7-4107-b221-161b17d8c4ed")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +21,8 @@
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "a40eeeec-77f3-40dc-b5fc-33037136b6ab")
+		(hide yes)
+		(uuid "da3e6a06-3ed3-4e5c-ab3c-8386720a7733")
 		(effects
 			(font
 				(size 1 1)
@@ -28,11 +30,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "GP.1575.18.4.A.02"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4b9098fd-b860-4e99-9803-a9fe97af20fd")
+		(uuid "1a6a697f-ae09-4e8a-8bbb-6e65f9a5cab1")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +46,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "bf5f4c1e-e4bf-4ee3-8bcf-ceb3950a23a8")
+		(uuid "b5253002-b09f-43f2-8fe0-3d274e033f4a")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -52,6 +54,8 @@
 			)
 		)
 	)
+	(property ki_fp_filters "ANT_GP.1575.18.4.A.02_TAL")
+	(attr through_hole exclude_from_bom)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_arc
 		(start 9.51484 -0.286232)
@@ -62,7 +66,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "17c0b41e-36d8-4e53-b171-c3ba08222796")
+		(uuid "f07f7dbb-93c7-46fe-972f-fcee0820ccfd")
 	)
 	(fp_arc
 		(start 10.1473 0.000001)
@@ -73,7 +77,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e6792db0-054b-4cab-8ae0-e2626511808e")
+		(uuid "a355836c-d927-452f-949a-97715765ed7e")
 	)
 	(fp_circle
 		(center 9.7663 0)
@@ -84,7 +88,7 @@
 		)
 		(fill no)
 		(layer "B.SilkS")
-		(uuid "08289f83-6f44-428f-94e1-4de1e521fc60")
+		(uuid "19002b29-ecd6-4104-a10e-26c86fbe3746")
 	)
 	(fp_line
 		(start -9.2583 -10.2616)
@@ -94,7 +98,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "99cdf045-da8e-4606-ade6-be37391e61ae")
+		(uuid "608a6fbe-468c-42e1-bed9-a3a55db851c3")
 	)
 	(fp_line
 		(start -9.2583 8.255)
@@ -104,7 +108,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "9c4d3889-adcc-4454-9e31-c26fbfbbe3dc")
+		(uuid "6f90bf19-e07f-4be1-828a-fa9ea52532f5")
 	)
 	(fp_line
 		(start 9.2583 -10.2616)
@@ -114,7 +118,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "689d2d53-c371-425d-9383-bc7863821d48")
+		(uuid "7b253de2-285d-4a44-bda3-c687ceab8ad9")
 	)
 	(fp_line
 		(start 9.2583 8.255)
@@ -124,7 +128,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "7a19a776-5bb0-4b0a-8766-07527676805a")
+		(uuid "1aa19f69-7d47-4ec0-b021-bb7f8d2b3646")
 	)
 	(fp_line
 		(start -9.0043 -10.0076)
@@ -134,7 +138,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f1a42e01-145c-463d-a768-d85f15cc3c89")
+		(uuid "e3898ee5-f9dc-49b0-a8f1-84a71e286739")
 	)
 	(fp_line
 		(start -9.0043 8.001)
@@ -144,7 +148,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "efe5ebcc-5c8d-49ae-b84f-165c653fccd1")
+		(uuid "a92e098a-45b7-4a35-859d-7d86987edc73")
 	)
 	(fp_line
 		(start 9.0043 -10.0076)
@@ -154,7 +158,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "bce00652-4271-4289-8d90-77de9c1983c8")
+		(uuid "2425f42c-65ee-42cf-8749-ab7cce35339a")
 	)
 	(fp_line
 		(start 9.0043 8.001)
@@ -164,7 +168,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "30bfebbb-02d9-48c8-a224-477433ca606e")
+		(uuid "05577248-accd-4dbe-b72a-f4f9ac819904")
 	)
 	(fp_circle
 		(center 0 -1.905)
@@ -175,13 +179,13 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "45873ee4-3ce9-4f9b-9c2d-338daa69365c")
+		(uuid "0c1bd9b6-1a14-49bc-97da-d4cb0add462c")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "09b6f31d-9f5c-4320-bf21-0cf7cf595f37")
+		(uuid "28e13301-50c7-416e-8c14-31af86b38fea")
 		(effects
 			(font
 				(size 1 1)
@@ -195,7 +199,7 @@
 		(drill 0.9398)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "4cebc353-026f-492e-b99a-ef583f6d5f03")
+		(uuid "0b9f13cd-0507-4a8a-8f37-af184377e166")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libs/aerolotl_custom.3dshapes/Taoglas_GP.1575.18.4.A.02.step"

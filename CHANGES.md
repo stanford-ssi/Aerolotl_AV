@@ -97,3 +97,58 @@ Pre-edit copy: `pre-connector-swap-backup/`. Footprint swaps are applied with **
 - Q1/Q5/Q6 PCB orientation pre-rotated +90° (the pads are unchanged) because the EasyEDA SOIC-8 frame is 90° off from KiCad's.
 - 17-21SUYC_TR8 LED symbol: K is now pin 1 and A is pin 2, to match KiCad's LED pad 1 = cathode. Wiring and nets are unchanged.
 - J3 USB-C stays on the KiCad HRO TYPE-C-31-M-12 footprint with a custom STEP, because KiCad ships no model for it. J5 stays TF-102-15 (custom).
+
+## 2026-10-07 courtyards + floorplan pass
+
+Pre-edit copy: `pre-floorplan-backup/`. Picture: `floorplan_before_after.png`. Board diameter unchanged (145.29 mm / 5.72 in).
+
+- **Courtyards** (library + PCB): J5 TF-102-15 now covers the whole socket body (old: none), StemmaQT J6/J7/J8, FL1, U6 BMP581 got courtyards, D2 enlarged to its 3D body. SD resistors R28–R36 were under the J5 body; moved 3.2 mm back.
+- **LoRa**: U10 Ra-01H + J4 SMA moved to the right edge below H2 (ANT pin 1 faces J4, ~6 mm RF run), with C37/C38/R27/TP6. ~90 mm from GPS, ~70 mm from Airlift, ~85 mm from the buck-boost.
+- **Battery input** (J2, Q1, D1, R8, TP1, TP2, TP5) moved as a block into the old LoRa spot. In2 +VBAT plane is now the rectangle (166,79)–(197.5,103.5) around that block; the rest of In2 is +3V3 (incl. under the LoRa).
+- **Buck-boost** (U3, L1, C19, C22, C23, R13, R14) moved 12 mm left, away from the IMUs; **power mux** (U4, C20, C24, R11, R12, R15) moved out of the igniter area next to it.
+- **Igniters**: bottom band is now igniter-only. J13 (bottom side) moved from beside the USB into the left lobe next to CH0 (tangent to the edge, like J14). F2 moved to clear J14's courtyard.
+- **USB-C J3**: turned 180° so the opening faces outward (pad row was facing the edge) and moved out so the shell front is 0.1 mm inside the board edge, radial.
+- Small fixes: TP3 out of the H1 keepout, R4 out of J1's courtyard, R8/R56/SW1 nudged off neighbours. 12 GND stitching vias that hit other-net pads were removed. Zone fills cleared — press **B** in KiCad to refill.
+
+## 2026-10-08 test points, BOOT switch, 3D models, silkscreen, stitching vias
+
+Pre-edit copy: `pre-silk-backup/`. Datasheets used: `libs/C126888_DSWB01LHGET.pdf`, `libs/C428721_XT30UPB-M.pdf`, `libs/C172771_KOA_RCTCTE.pdf`.
+
+- **TP1–TP11** → KOA RCTCTE checker chip (C172771), new footprint `aerolotl_custom:TestPoint_KOA_RCTCTE_2.0x1.25mm` (0805 land, both pads = pin 1, 4.0×3.0 mm courtyard for hook access) + STEP model. LCSC/MPN/Manufacturer fields added in the schematic.
+- **SW2 BOOT** → Kingtek DSWB01LHGET 1-pos slide DIP switch (C126888), THT, 7.62 mm pin spacing, Ø1.0 mm holes per datasheet. New footprint `aerolotl_custom:SW_DIP_SPSTx01_Kingtek_DSWB01LHGET_W7.62mm` + STEP. Same SPST topology (BOOT0 ↔ +3V3, R3 pull-down): ON = system bootloader, OFF = flash.
+- **3D models** (generated from datasheet dimensions, `libs/aerolotl_custom.3dshapes/`): `AMASS_XT30UPB-M.step` (J2), `KOA_RCTCTE_2.0x1.25x1.45mm.step`, `Kingtek_DSWB01LHGET.step`. F1/F2 now use `F1812_L4.5-W3.2-H1.0.step`.
+- **Silkscreen**: hid part-number values (U5–U9), moved 50+ reference designators off pads/other silk/edges, deleted the stale "DROGUE (J14 on bottom)" text, shortened "MAIN (CH1)"/"DROGUE (CH0)" (dropped +/-; e-matches are non-polar) and moved them clear, removed J3 silk crossing the board edge. R5, C27, SW2 nudged ≤0.25 mm.
+- **Stitching vias**: 56 of the GND vias deleted during re-placement restored where they clear pads (≥0.25 mm), courtyards, keepouts and other vias.
+
+## 2026-10-08 autorouting pass
+
+Pre-route copy: `pre-route-backup/` (PCB, DRU, PRO). Overview: `routing_overview.png`.
+
+- SW2: silkscreen "ON" + arrow beside the switch (slide toward the arrow = BOOT0 high / bootloader). Fit the switch so its printed "ON" matches.
+- Test points: `duplicate_pad_numbers_are_jumpers yes`, so the two RCTCTE pads count as one connection.
+- Routed with a custom grid router: 950 tracks (614 F.Cu, 290 B.Cu, 46 In2.Cu) and 290 vias (63 GND + 35 +3V3 plane fan-outs, 192 signal). Signals 0.2 mm; +BATT/+VBAT/+VBAT_ARM/IGN0_RTN 2.0 mm where it fits (1.0 mm on some +VBAT / IGN0_HS runs); VSYS 0.5 mm with one 0.2 mm section to widen. Checked against netclass clearances, PWR_HI 0.3 mm, 0.3 mm edge, keepouts, hole-to-hole: 0 violations.
+- DRU: U1 courtyard now uses the same 0.15 mm fine-pitch clearance as J3/U2/U3/U4 (109 spots rely on it). Those rules now match when *either* item touches the courtyard.
+- Still open: /External/GPIO.PE9, /Igniter/SENSE_I1, /Indicators/LED.G, /MCU/SDSPI.SCK, /MCU/SPI1.INT_BMP, /Sensors/M10S.TX; 7 GND + 3 +3V3 pads without a plane via (most may connect through the F.Cu GND pour after refill).
+- Zone fills are empty: press B in KiCad.
+
+## 2026-10-08 DRC.rpt clean-up (213 items)
+
+Pre-edit copy: `pre-drcfix-backup/`.
+
+**Real copper errors, fixed:**
+- +3V3 staircase too close to SPI1.INT_IMU_ACC, +VBAT_ARM 0.2986 mm from Q5 gate, M10S.RX crossing a J1 locating-peg hole, and VSYS vs U3.9: all rerouted. The router and checker now use exact round-end geometry and include NPTH holes.
+- Removed a 0.026 mm dangling +3V3 stub. Added a C4.2 → U1.48 GND link and a via for R35.1 +3V3.
+- Test points: each RCTCTE now has a short track joining its two pads, so DRC sees one connection.
+- One extra GND stitching via in an isolated F.Cu pour island.
+- Starved thermals: J3 A1/A12/B1/B12, U1.48/63/99, U7.4 and C4.2 set to solid zone connection.
+- Rewrote track coordinates at full precision (no rounding of your own routing).
+
+**False positives, resolved at the source:**
+- Keepouts: H1/H2/H3 and the Airlift antenna keepout now allow pads, so the parts' own NPTH holes no longer trip them (tracks, vias and pours are still blocked). Library footprints updated too.
+- J1 Samtec pegs: DRU rule allows 0.15 mm hole clearance inside J1 only (manufacturer land pattern).
+- Field mismatches: synced all schematic fields onto the PCB footprints, and the SW2 LCSC number is now C126888. TP symbols set to *in BOM*, since they're real parts now.
+- Lib mismatches for custom parts: re-exported every aerolotl_custom footprint from the board. J2, J3, F1/F2 and U5 (custom 3D models) moved into aerolotl_custom so a library update can't strip their models.
+- Text: 27 labels 0.7 → 0.8 mm with 0.15 mm stroke, and the project minimum text height is now 0.8 mm (JLC prints 0.8). The H3 bottom-side text is mirrored.
+- Silkscreen: about 60 reference/value labels re-placed with ≥0.19 mm clearance. The ON arrow moved 0.7 mm right, the DROGUE label moved off the J13 outline, and three U11 pin labels were nudged.
+
+**Still for you:** route GPIO.PE9, SENSE_I1, LED.G, SDSPI.SCK, SPI1.INT_BMP and M10S.TX; GND on U6.3; +3V3 between U7.11 and C30.1. Then run Tools → Update Footprints from Library for the KiCad-library parts. Zone fills are cleared: press B, then run DRC.

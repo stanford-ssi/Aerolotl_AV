@@ -140,6 +140,7 @@
 				(size 0.8 0.8)
 				(thickness 0.12)
 			)
+			(justify mirror)
 		)
 	)
 	(fp_text user "${REFERENCE}"
@@ -178,7 +179,7 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
@@ -208,7 +209,7 @@
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour not_allowed)
 			(footprints allowed)
 		)
@@ -238,7 +239,7 @@
 		(keepout
 			(tracks allowed)
 			(vias allowed)
-			(pads not_allowed)
+			(pads allowed)
 			(copperpour allowed)
 			(footprints not_allowed)
 		)

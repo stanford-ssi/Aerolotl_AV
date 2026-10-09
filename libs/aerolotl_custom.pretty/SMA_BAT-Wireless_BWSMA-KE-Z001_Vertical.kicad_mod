@@ -3,12 +3,14 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
+	(uuid "447c058a-928f-4fe0-a510-045cd201bfaa")
 	(descr "SMA jack, vertical through-hole, 50 ohm, 6.5x6.5mm body, 5x 1.4mm holes on a 5.08mm square (BAT Wireless BWSMA-KE-Z001, LCSC C496549).")
 	(tags "SMA coaxial vertical THT")
 	(property "Reference" "REF**"
-		(at 0 -4.6 0)
+		(at 0.000003 -4.6 0)
 		(layer "F.SilkS")
-		(uuid "066e0723-4d41-4352-a912-52e3d3077ccd")
+		(hide yes)
+		(uuid "d500f1cd-bcc1-46ad-94de-51fec76cb60d")
 		(effects
 			(font
 				(size 1 1)
@@ -17,9 +19,9 @@
 		)
 	)
 	(property "Value" "SMA_BAT-Wireless_BWSMA-KE-Z001_Vertical"
-		(at 0 5.8 0)
+		(at -0.000002 5.8 0)
 		(layer "F.Fab")
-		(uuid "51e8e22b-628a-405d-a8b6-be5ca5f465f6")
+		(uuid "1df73af9-a287-47e7-aae9-f79e4b071564")
 		(effects
 			(font
 				(size 1 1)
@@ -27,12 +29,11 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.lcsc.com/product-detail/C496549.html"
 		(at 0 0 0)
-		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5a74ff11-670b-409e-ab0a-20ec12c6e96f")
+		(uuid "d2710e2f-c433-4faf-bff8-801497bbce8e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,12 +41,11 @@
 			)
 		)
 	)
-	(property "Description" "SMA jack, vertical through-hole, 50 ohm, 6.5x6.5mm body, 5x 1.4mm holes on a 5.08mm square (BAT Wireless BWSMA-KE-Z001, LCSC C496549)."
+	(property "Description" "SMA jack, 50 ohm, vertical through-hole"
 		(at 0 0 0)
-		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "500382ed-30a2-47c1-8e8a-7c12797387f9")
+		(uuid "3b85047d-54ae-4fec-8998-87877ffca7f2")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -54,83 +54,86 @@
 		)
 	)
 	(attr through_hole)
-	(fp_rect
-		(start -3.25 -3.25)
-		(end 3.25 3.25)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "9a5e9bdd-4eca-4f71-8d1a-b11ab9be70bc")
-	)
-	(fp_circle
-		(center 0 0)
-		(end 2.1 0)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Fab")
-		(uuid "0138efcb-0838-468f-9679-11d1ddf6754a")
-	)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -3.36 -1.2)
-		(end -3.36 1.2)
+		(start -1.200001 -3.359999)
+		(end 1.199999 -3.360003)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b617fb26-c505-4262-a415-364c31619c76")
+		(uuid "32b53036-f13c-4090-b06d-774506d6c935")
 	)
 	(fp_line
-		(start 3.36 -1.2)
-		(end 3.36 1.2)
+		(start 3.359999 -1.200001)
+		(end 3.360003 1.199999)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0e4e8582-c595-4c3a-b21c-0f24265d6b49")
+		(uuid "9c6252bf-a929-4fc9-9498-7c559ce1024f")
 	)
 	(fp_line
-		(start -1.2 -3.36)
-		(end 1.2 -3.36)
+		(start -3.360003 -1.199999)
+		(end -3.359999 1.200001)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "234214c7-0bed-4b2f-beb3-fa832cf07609")
+		(uuid "eb50813c-e3bb-4831-a1e0-2b94a519bb80")
 	)
 	(fp_line
-		(start -1.2 3.36)
-		(end 1.2 3.36)
+		(start -1.199999 3.360003)
+		(end 1.200001 3.359999)
 		(stroke
 			(width 0.12)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "ddfb083c-1bbe-499f-a73e-b179a0d94922")
+		(uuid "45461a28-2974-409f-a78d-06b0ab472bad")
 	)
-	(fp_rect
-		(start -3.75 -3.75)
-		(end 3.75 3.75)
+	(fp_poly
+		(pts
+			(xy -3.750002 -3.749999) (xy 3.749999 -3.750002) (xy 3.750002 3.749999) (xy -3.749999 3.750002)
+		)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "93c0c8f0-598c-449f-96e5-956b9730dab1")
+		(uuid "8cf16dc2-5de3-4490-b2b5-047f77e94b21")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.099999 0.000001)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "87788b71-6a5f-422e-a7de-1d03b07e0de6")
+	)
+	(fp_poly
+		(pts
+			(xy -3.250002 -3.25) (xy 3.25 -3.250002) (xy 3.250002 3.25) (xy -3.25 3.250002)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "4cbbd84a-bc71-49c2-97c1-937b233e9041")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 4.6)
+		(at -0.000003 4.6 0)
 		(layer "F.Fab")
-		(uuid "04208a75-0bb2-4331-a78b-3824e063f705")
+		(uuid "747904c5-708d-438b-ae4f-2cd2ef89462f")
 		(effects
 			(font
 				(size 0.8 0.8)
@@ -139,44 +142,44 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at 0 0)
+		(at 0 0 0)
 		(size 2 2)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "86c2f4b1-e86e-43d1-aebf-43ab52547d56")
+		(uuid "f0064d5c-d74a-462d-a8f7-bb1f0ad57707")
 	)
 	(pad "2" thru_hole circle
-		(at -2.54 -2.54)
+		(at -2.54 -2.54 0)
 		(size 2.3 2.3)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "90a70573-5118-4bb6-84c0-45044bc920b7")
+		(uuid "1e899328-5e83-417d-955e-696de62d4c52")
 	)
 	(pad "2" thru_hole circle
-		(at 2.54 -2.54)
+		(at -2.54 2.54 0)
 		(size 2.3 2.3)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "94db3fea-f786-4023-9e3d-464383cda17b")
+		(uuid "8bed33ba-5f32-404a-8447-524aab9e714d")
 	)
 	(pad "2" thru_hole circle
-		(at -2.54 2.54)
+		(at 2.54 -2.54 0)
 		(size 2.3 2.3)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "3000518e-367c-401a-8ae6-379253909d38")
+		(uuid "9a56cbdd-a549-4723-bdb3-3c4846c49ffa")
 	)
 	(pad "2" thru_hole circle
-		(at 2.54 2.54)
+		(at 2.54 2.54 0)
 		(size 2.3 2.3)
 		(drill 1.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "c2cc54ea-b29b-4025-a30e-384bd1ef043d")
+		(uuid "516b815d-7032-4cff-a5ad-2a11bf3fc4a8")
 	)
 	(embedded_fonts no)
 	(model "${KICAD10_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Amphenol_132291_Vertical.step"

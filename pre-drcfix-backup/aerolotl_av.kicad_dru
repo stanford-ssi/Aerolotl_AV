@@ -1,0 +1,62 @@
+(version 1)
+# Stackup: JLC04161H-7628 (7628 prepreg 0.2104 mm), values from JLCPCB impedance calculator
+
+(rule "RF CPWG: 8 mil gap to ground pour"
+	(condition "A.NetClass == 'RF' && B.Type == 'Zone'")
+	(constraint clearance (min 0.2032mm)))
+
+(rule "USB non-coplanar: keep pours 0.5 mm away"
+	(condition "A.NetClass == 'USB' && B.Type == 'Zone'")
+	(constraint clearance (min 0.5mm)))
+
+# ---- JLCPCB 4-layer fabrication limits (standard pricing) ----
+(rule "JLC: PTH annular ring >= 0.15mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+	(constraint annular_width (min 0.15mm)))
+
+(rule "JLC: no blind/buried/micro vias"
+	(condition "A.Type == 'Via' && A.Via_Type != 'Through'")
+	(constraint disallow via))
+
+# ---- USB-C J3 fan-out: 0.5 mm pitch pads with 0.2 mm gaps. Relax only inside J3's courtyard
+#      (JLC 4-layer minimum is 0.09 mm, so 0.15 mm has margin). Everywhere else keeps the netclass values.
+(rule "USB-C J3 fine-pitch clearance"
+	(condition "A.intersectsCourtyard('J3')")
+	(constraint clearance (min 0.15mm)))
+
+(rule "USB-C J3 neck-down"
+	(condition "A.Type == 'Track' && A.intersectsCourtyard('J3')")
+	(constraint track_width (min 0.15mm) (opt 0.2mm)))
+
+# ---- U4 TPS2116 (SOT-583, 0.5 mm pitch, 0.2 mm pad gaps). +VBAT is PWR_HI (0.3 mm), which its own pins can't meet.
+(rule "U4 fine-pitch clearance"
+	(condition "A.intersectsCourtyard('U4')")
+	(constraint clearance (min 0.15mm)))
+
+(rule "U4 neck-down"
+	(condition "A.Type == 'Track' && A.intersectsCourtyard('U4')")
+	(constraint track_width (min 0.2mm) (opt 0.3mm)))
+
+# ---- Same 0.2 mm pad gap vs the 0.2032 mm USB netclass on the ESD array and the MCU USB pins
+(rule "U2 fine-pitch clearance"
+	(condition "A.intersectsCourtyard('U2')")
+	(constraint clearance (min 0.15mm)))
+
+(rule "U1 USB pins clearance"
+	(condition "A.NetClass == 'USB' && A.intersectsCourtyard('U1')")
+	(constraint clearance (min 0.15mm)))
+
+# ---- U3 TPS63802 (VSON-HR, 0.5 mm pitch, 0.25 mm pads / 0.25 mm gaps). Pads pass on their own, but
+#      0.5 mm PWR_LO tracks (VSYS, BB_SW1/2) are twice the pad height and hit the neighbouring pins.
+(rule "U3 fine-pitch clearance"
+	(condition "A.intersectsCourtyard('U3')")
+	(constraint clearance (min 0.15mm)))
+
+(rule "U3 neck-down"
+	(condition "A.Type == 'Track' && A.intersectsCourtyard('U3')")
+	(constraint track_width (min 0.2mm) (opt 0.25mm)))
+
+# ---- U1 LQFP-100 (0.5 mm pitch) fan-out: same 0.15 mm relaxation as the other fine-pitch parts, inside U1's courtyard only.
+(rule "U1 fine-pitch clearance"
+	(condition "A.intersectsCourtyard('U1')")
+	(constraint clearance (min 0.15mm)))

@@ -1,14 +1,15 @@
 (footprint "BUZ-TH_BD9.0-P5.00-D0.6-FD"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
+	(uuid "82697976-91b5-44b7-a238-ee2412f66067")
 	(descr "Huaneng HNB09A03 active magnetic buzzer, 9x5.5mm, 5.0mm pitch (LCSC C96102)")
 	(tags "buzzer HNB09A03 C96102")
 	(property "Reference" "REF**"
 		(at 0 -5.8 0)
 		(layer "F.SilkS")
-		(uuid "b720da3b-7d35-47b0-a2f4-596369571f52")
+		(uuid "c2f43f74-be6a-4ef0-8af2-103ffc473a53")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +20,8 @@
 	(property "Value" "BUZ-TH_BD9.0-P5.00-D0.6-FD"
 		(at 0 5.8 0)
 		(layer "F.Fab")
-		(uuid "94ee602e-3bec-4e01-b95d-7dec9c26ed38")
+		(hide yes)
+		(uuid "78aaf264-2df7-432d-b5d9-436a656312dc")
 		(effects
 			(font
 				(size 1 1)
@@ -27,11 +29,11 @@
 			)
 		)
 	)
-	(property "Datasheet" "https://www.lcsc.com/product-detail/C96102.html"
+	(property "Datasheet" ""
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0cd8243b-c3d9-42db-a621-9a42e3d5a2aa")
+		(uuid "b03a4ba8-676a-405b-ae8f-49835346fc55")
 		(effects
 			(font
 				(size 1 1)
@@ -39,11 +41,11 @@
 			)
 		)
 	)
-	(property "Description" "HNB09A03 3V active buzzer"
+	(property "Description" "Buzzer, polarized"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f2d7f970-820f-4c34-8ddc-ac8580c0997a")
+		(uuid "2e520c41-da04-4a68-b198-81d8cbd6bad9")
 		(effects
 			(font
 				(size 1 1)
@@ -51,19 +53,9 @@
 			)
 		)
 	)
-	(property "LCSC Part" "C96102"
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2d5bf884-fb47-4f07-9771-cd4c32fe12d8")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
+	(property ki_fp_filters "*Buzzer*")
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -3.05 -1.65)
 		(end -2.29 -1.65)
@@ -72,7 +64,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "142b0873-87d1-4f3a-b14e-e6b2da54dcee")
+		(uuid "0d05fd8c-3901-4b15-acac-573f84e1dabe")
 	)
 	(fp_line
 		(start -2.67 -2.03)
@@ -82,18 +74,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "7299f546-f1b4-4946-9082-fc7b9bc51be8")
-	)
-	(fp_circle
-		(center 0 0)
-		(end 4.6 0)
-		(stroke
-			(width 0.25)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "40294b19-510d-4503-8887-7e90b7807979")
+		(uuid "17d87734-7fa0-4dc4-ad40-359ea1e7a0f0")
 	)
 	(fp_circle
 		(center 0 0)
@@ -104,18 +85,18 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "5cc814d6-63fa-453c-b453-ffce8b2c20d3")
+		(uuid "454c659c-fdfc-4eb5-9805-3b835c7083df")
 	)
 	(fp_circle
 		(center 0 0)
-		(end 4.5 0)
+		(end 4.6 0)
 		(stroke
-			(width 0.1)
+			(width 0.25)
 			(type solid)
 		)
 		(fill no)
-		(layer "F.Fab")
-		(uuid "4d9f8d08-ad9b-46f7-b596-40d597082c5e")
+		(layer "F.SilkS")
+		(uuid "7df2cf49-ecc8-4c4d-897f-c3aec2073d8c")
 	)
 	(fp_circle
 		(center 0 0)
@@ -126,12 +107,23 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "3ff9b04c-24fc-47f3-950b-e4e7f105f3a6")
+		(uuid "3a3a11c3-c467-445f-8d3e-d9576f41ac88")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 4.5 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "075fb59d-8345-4a94-bdd5-9d39489abdcd")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "9636b152-9a57-415e-8f5a-4887ce947e83")
+		(uuid "5e95daa6-bd2a-4b4b-8f58-20d7b9055b60")
 		(effects
 			(font
 				(size 1 1)
@@ -145,7 +137,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "f65abd07-1f18-4a62-8341-74da79bd2c2b")
+		(uuid "e26c06bd-8874-4cc7-8425-e4d4f83188f2")
 	)
 	(pad "2" thru_hole circle
 		(at 2.5 0)
@@ -153,7 +145,7 @@
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "aa824dbd-92fa-4aaf-96d2-2118c2090cb1")
+		(uuid "1ab55086-6d53-49f6-9eed-8475ecd591b8")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libs/aerolotl_custom.3dshapes/BUZ-TH_D9.0-H5.5-P5.0.step"

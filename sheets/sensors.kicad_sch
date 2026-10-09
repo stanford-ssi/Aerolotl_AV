@@ -7826,7 +7826,7 @@
 				)
 			)
 		)
-		(property "Value" "ADXL345BCCZ-RL7"
+		(property "Value" "ADXL345"
 			(at 199.39 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8697,7 +8697,7 @@
 				)
 			)
 		)
-		(property "Value" "ADXL375BCCZ-RL7"
+		(property "Value" "ADXL375"
 			(at 204.47 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10277,7 +10277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RF_GPS:ublox_MAX"
+		(property "Footprint" "aerolotl_custom:ublox_MAX"
 			(at 76.2 135.89 0)
 			(hide yes)
 			(show_name no)

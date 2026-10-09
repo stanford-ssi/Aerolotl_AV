@@ -1,0 +1,173 @@
+(footprint "TerminalBlock_Kangnex_WJ2EDGVM-5.08-02P_1x02_P5.08mm_Vertical"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Kangnex WJ2EDGVM-5.08-02P pluggable terminal block header, vertical (wire enters mated plug from the top), threaded flange, 2 pins, 5.08mm pitch, 1.6mm holes per manufacturer PCB layout. LCSC C193973. Mating plug WJ2EDGKM-5.08-02P (LCSC C63303).")
+	(tags "terminal block pluggable vertical 5.08 2EDG")
+	(property "Reference" "REF**"
+		(at 2.54 -5.3 0)
+		(layer "F.SilkS")
+		(uuid "2f81fbaf-afb0-4313-bca8-797ac21800cb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TerminalBlock_Kangnex_WJ2EDGVM-5.08-02P_1x02_P5.08mm_Vertical"
+		(at 2.54 7.6 0)
+		(layer "F.Fab")
+		(uuid "cc4dcaae-51b3-4fe8-8052-6e7eba48c699")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2dade0a5-811e-4454-b445-5ec505796f21")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Kangnex WJ2EDGVM-5.08-02P pluggable terminal block header, vertical (wire enters mated plug from the top), threaded flange, 2 pins, 5.08mm pitch, 1.6mm holes per manufacturer PCB layout. LCSC C193973. Mating plug WJ2EDGKM-5.08-02P (LCSC C63303)."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c46da84-4c1f-424c-a4fe-7cc14644ffe5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -7.62 -3.7)
+		(end 12.7 4.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "de04aaee-c424-492c-af98-4546df06df80")
+	)
+	(fp_rect
+		(start -7.73 -3.81)
+		(end 12.81 4.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "07403a14-6923-4077-adea-e1d7f45b9d21")
+	)
+	(fp_rect
+		(start -8.12 -4.2)
+		(end 13.2 5.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0aa60a5f-9bc5-4939-afed-0c8fd868cf5a")
+	)
+	(fp_circle
+		(center -5.08 0.45)
+		(end -3.83 0.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f7d51c52-a880-4429-aea2-f769c3e0db9a")
+	)
+	(fp_circle
+		(center 10.16 0.45)
+		(end 11.41 0.45)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "878d5b5b-fd68-44f2-80df-0dd5f0cdc386")
+	)
+	(fp_line
+		(start -1.6 -4.3)
+		(end 1.6 -4.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d64a1e5e-945d-4e0a-b318-2623e019c905")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 2.6)
+		(layer "F.Fab")
+		(uuid "fb584602-9866-44ca-bcba-02d685391ade")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "mate: WJ2EDGKM-5.08-02P"
+		(at 2.54 6.2)
+		(layer "F.Fab")
+		(uuid "6ba664f3-834a-43f1-9e47-6b88803f410c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 0 0)
+		(size 2.6 3.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(uuid "c69f85d2-52f9-4d29-9410-05ce2db894dd")
+	)
+	(pad "2" thru_hole oval
+		(at 5.08 0)
+		(size 2.6 3.4)
+		(drill 1.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c334030b-d8ec-42c9-8c2c-0276186db23a")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_Phoenix_MSTB.3dshapes/PhoenixContact_MSTBV_2,5_2-GF-5,08_1x02_P5.08mm_Vertical_ThreadedFlange.step"
+		(offset
+			(xyz 5.08 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 180)
+		)
+	)
+)
