@@ -8793,7 +8793,7 @@
 			(uuid "95ec78bd-befb-4264-b777-0b358e436caf")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/libs/aerolotl_custom.3dshapes/Kangnex_WJ128V-5.0-2P_C8269.wrl"
+		(model "${KIPRJMOD}/libs/aerolotl_custom.3dshapes/Kangnex_WJ128V-5.0-2P_C8269.step"
 			(offset
 				(xyz 2.5 0 0)
 			)
@@ -54314,7 +54314,7 @@
 			(uuid "bf5168d7-bc99-4b69-bf57-a4ca5d21c18d")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/libs/aerolotl_custom.3dshapes/Kangnex_WJ128V-5.0-2P_C8269.wrl"
+		(model "${KIPRJMOD}/libs/aerolotl_custom.3dshapes/Kangnex_WJ128V-5.0-2P_C8269.step"
 			(offset
 				(xyz 2.5 0 0)
 			)
