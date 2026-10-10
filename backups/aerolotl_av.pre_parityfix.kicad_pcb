@@ -13560,7 +13560,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Bourns"
+		(property "KiLib_Generator" "Bourns"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17993,7 +17993,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Bourns"
+		(property "KiLib_Generator" "Bourns"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -32492,7 +32492,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Bourns"
+		(property "KiLib_Generator" "Bourns"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -37960,7 +37960,6 @@
 		(path "/5f72b0ed-0324-499f-bb98-18e31eb15f1d/0b8947d2-bb68-41bb-b522-b23990809887")
 		(sheetname "/External/")
 		(sheetfile "sheets/external.kicad_sch")
-		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -41219,7 +41218,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Bourns"
+		(property "KiLib_Generator" "Bourns"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -51186,7 +51185,6 @@
 		(path "/5f72b0ed-0324-499f-bb98-18e31eb15f1d/ba2f46ee-9630-4269-8db4-ee89152e4204")
 		(sheetname "/External/")
 		(sheetfile "sheets/external.kicad_sch")
-		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)

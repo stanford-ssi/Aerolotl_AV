@@ -152,3 +152,22 @@ Pre-edit copy: `pre-drcfix-backup/`.
 - Silkscreen: about 60 reference/value labels re-placed with ≥0.19 mm clearance. The ON arrow moved 0.7 mm right, the DROGUE label moved off the J13 outline, and three U11 pin labels were nudged.
 
 **Still for you:** route GPIO.PE9, SENSE_I1, LED.G, SDSPI.SCK, SPI1.INT_BMP and M10S.TX; GND on U6.3; +3V3 between U7.11 and C30.1. Then run Tools → Update Footprints from Library for the KiCad-library parts. Zone fills are cleared: press B, then run DRC.
+
+## DRC1 warnings (lib_footprint_mismatch, silk, text)
+
+Pre-edit copy: `backups/aerolotl_av.pre_libfix.kicad_pcb`.
+
+- Root cause of most lib mismatches: earlier rotations through odd angles left courtyard/fab rectangles stored as 4-point polygons (or 4 loose lines), plus ~5 nm rounding noise and a few flipped fab `${REFERENCE}` angles. Pads were always identical to the library.
+- 57 passives/SOT/SOIC/LED/CP_Elec: graphics replaced with an exact copy from an unflagged twin of the same footprint (e.g. C16 ← C29). Fab ref angle/size matched to the twin.
+- C24, D7, D8, R45–R48: polygons/lines converted back to `fp_rect`; fab ref angle reset to the library's 0°.
+- J7/J8 (StemmaQT): graphics copied from J6. F2: removed an extra fab `${REFERENCE}` text not in the library. Q6: reference angle 85° → 90°.
+- SW1, SW3, J9, J10, L1, U2, U4, C32, C34: rounding noise snapped; no twin to compare with, so if any remain flagged, right-click → *Update Footprint…* on those only.
+- Silk: C15 reference moved clear of Y1's reference. R5 moved 0.13 mm down (its two tracks follow) so its silk clears U2's pin-1 marker.
+- `BATT + -` back-silk text stroke 0.12 → 0.15 mm.
+
+## Last DRC warnings (J9/J10 lib mismatch, R45–R48 parity)
+
+Pre-edit copy: `backups/aerolotl_av.pre_parityfix.kicad_pcb`.
+
+- J9/J10: footprint type was blank ("unspecified") instead of *through hole*. Update Footprint keeps the board's fabrication attributes, which is why the warning survived the update. Added `(attr through_hole)`.
+- R45–R48: the library update renamed their `Manufacturer` field to `KiLib_Generator` (value still "Bourns"). Renamed it back to `Manufacturer`.

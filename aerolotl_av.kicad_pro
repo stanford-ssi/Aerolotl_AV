@@ -726,7 +726,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "aerolotl_av.step",
       "svg": "",
       "vrml": ""
     },
@@ -1130,7 +1130,7 @@
         "uuid": "3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754"
       }
     ],
-    "used_designators": "#FLG1-10,#FLG13-14,F1-2,F8-10,FL1,D1-10,#PWR1-142,#PWR148-163,#PWR305-316,Y1-3,BZ1,R1-56,R64-65,H1-3,BT1-5,L1,X1-2,J1-14,J16,J19-21,AE1-2,U1-14,FB1,FB3,SW1-3,C1-46,C49-51,C55-76,C79-84,SAW2,Q1-8,TP1-11",
+    "used_designators": "#FLG1-10,#FLG13-14,F1-2,F8-10,FL1,D1-10,#PWR1-142,#PWR148-163,#PWR305-316,Y1-3,BZ1,R1-56,R64-65,H1-3,BT1-5,L1,X1-2,J1-14,J16,J19-21,AE1-2,U1-14,SW1-3,FB1,FB3,C1-46,C49-51,C55-76,C79-84,SAW2,Q1-8,TP1-11",
     "variants": []
   },
   "sheets": [
